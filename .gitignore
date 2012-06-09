@@ -4,3 +4,10 @@
 *.jar
 *.war
 *.ear
+# target dir
+target
+# eclipse files and dirs
+.settings
+.classpath
+.project
+build
