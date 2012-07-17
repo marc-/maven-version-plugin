@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.maven.ide.eclipse.vp.feature"
+      label="Maven Version Plugin"
+      version="1.0.0.qualifier"
+      os="win32"
+      ws="win32"
+      arch="x86,x86_64">
+
+   <description>
+      Maven Version plugin feature.
+   </description>
+
+   <license url="">
+      
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.m2e.core"/>
+      <import plugin="org.eclipse.osgi.util"/>
+      <import plugin="org.eclipse.m2e.maven.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.ui.ide"/>
+   </requires>
+
+   <plugin
+         id="version-plugin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

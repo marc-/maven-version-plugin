@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.maven.ide.eclipse.vp.feature_1.0.0.201205101122.jar" id="com.sperasoft.tools.maven.vp.feature" version="1.0.0.201205101122" os="win32" ws="win32" arch="x86,x86_64">
+      <category name="org.maven.ide.eclipse.vp"/>
+   </feature>
+   <category-def name="org.maven.ide.eclipse.vp" label="Maven Version Plugin"/>
+</site>

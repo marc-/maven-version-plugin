@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <requires>
+   	<import plugin="org.eclipse.ui"/>
+   	<import plugin="org.eclipse.core.runtime"/>
+   	<import plugin="org.eclipse.ui.editors"/>
+   	<import plugin="org.eclipse.jface.text"/>
+   	<import plugin="org.eclipse.m2e.core"/>
+   	<import plugin="org.eclipse.osgi.util"/>
+   	<import plugin="org.eclipse.m2e.maven.runtime"/>
+   	<import plugin="org.eclipse.core.resources"/>
+   </requires>
+   
+   <extension
+         point="org.eclipse.ui.editors.templates">
+	      <contextType
+	            name="Version Resolver"
+	            class="org.maven.ide.eclipse.vp.ContextType"
+	            id="javadoc">
+	      </contextType>
+         <template id="org.maven.ide.eclipse.vp.versionPlugin" contextTypeId="javadoc" name="version" description="Adds current project version from pom file.">
+			<pattern>${version}</pattern>
+         </template>
+         <resolver name="Version Resolver" type="version" contextTypeId="javadoc" description="Version resolver"
+         	class="org.maven.ide.eclipse.vp.VersionVariableResolver"/>
+
+         <template id="org.mvp.versionPlugin" contextTypeId="typecomment_context" name="version" description="Adds current project version from pom file.">
+			<pattern>${version}</pattern>
+         </template>
+         <resolver name="Version Resolver" type="version" contextTypeId="typecomment_context" description="Version resolver"
+         	class="org.maven.ide.eclipse.vp.VersionVariableResolver"/>
+   </extension>
+</plugin>
